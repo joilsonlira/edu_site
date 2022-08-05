@@ -99,7 +99,6 @@ html{
 
 #main_header
 {
-    /* position: fixed; */
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -148,16 +147,19 @@ html{
     width: 100%;
     height: auto;
 }
-.content{
+.bg_main .info .content{
+    display: flex;
+    align-items: center;
     border-left: 2px var(--color-MAIN) solid;
     padding-left: 2rem;
     width: auto;
+    height: 40vh;
 }
 .info .content p{
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: lighter;
     margin-top: 1rem;
-    line-height: 32px;
+    line-height: 28px;
     font-family: gotham-light;
 }
 .nex_section{
@@ -200,16 +202,21 @@ html{
     background: black;
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 48%, rgba(52, 60, 173, 0)),url(../assets/images/Foto\ 4\ WTW.jpeg);
     background-repeat: no-repeat;
-    background-position:150%;
-    padding: 0 5rem;
+    background-position:right;
+    background-size: contain;
+    padding: 1rem 1rem  1rem 5rem;
 }
 #secondary_section .info{
     width: 50vw;
     height: auto;
+    padding: 0;
 }
 #secondary_section .content{
     border-left: none;
-    border-right: 2px var(--color-MAIN) solid
+    border-right: 2px var(--color-MAIN) solid;
+    padding-left: 0;
+    padding-right: 1rem;
+    width: 87.1%;
 }
 #secondary_section .content span{
     font-size: 2em;
@@ -227,7 +234,7 @@ html{
 }
 .info .content h1{
     font-family: 'Roboto';
-    font-size: 64px;
+    font-size: 32px;
     font-weight:bold;
     text-transform: capitalize;
     color: var(--color-COMPLEMENTAR_1);

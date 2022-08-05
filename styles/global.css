@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gotham;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+:root{
+    --height-MAIN_HEADER: 20vh;
+    --default-horizontal-SPACING: 2.4vw;
+    --minimum-horizontal-SPACING: .8vw;
+    --default-vertical-SPACING: 3vh;
+    --max-vertical-SPACING: 5vh;
+    --minimum-vertical-SPACING: 1vh;
+    --color-BG: black;
+    --color-MAIN: #FFC309;
+    --color-SECOND: #FF6C2F;
+    --color-COMPLEMENTAR_1: #b78c30;
+    --color-COMPLEMENTAR_2: #faedbc;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+:target{
+    scroll-margin-top: var(--height-MAIN_HEADER);
+}
+
+#logo{
+    width: 50px;
+    height: auto;
+}
+#logo img{
+    width: 100%;
+    height: auto;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+}
+.menu button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-MAIN);
+    width: 150px;
+    border: 15px solid;
+    border-image: url(../assets/images/Ativo\ 35PARA\ NEGOCIOS.png) 11 round;
+    border-radius: 4px;
+    text-transform: uppercase;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.menu button svg{
+    position: relative;
+    right: -50px;
+}
+.menu button svg path{
+    stroke: var(--color-SECOND);
+}
+.menu .menu_item a {
+    text-decoration: none;
+    color: white;
+    font-size: .9em;
+    padding: 1rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+.menu button:hover{
+    font-weight:lighter;
+    color: white;
+    background-color: var(--color-SECOND);
+    transform: scale(1.1);
+    animation: none;
+}
+.menu .menu_item a::before{
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: var(--color-SECOND);
+    transition: all 500ms ease; 
+}
+.menu .menu_item a:hover:before {
+    font-size: 1em;
+    width: 100%;
+}
+
+#main_header
+{
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+    width: 100%;
+    height: var(--height-MAIN_HEADER);
+    display: flex;
+    background-color: transparent;
+    padding: 0 5rem;
+}
+.bg_main{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 10%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+    background: linear-gradient(357deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../assets/images/Edu\ palestrando\ no\ WTW.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 2rem;
+    width: 60vw;
+    height: auto;
+    padding: 2rem;
+    border: 1px var(--color-COMPLEMENTAR_1);
+    /* background-color: rgba(226, 162, 43, 0.418); */
+}
+
+.icon{
+    width: 100%;
+    height: auto;
+}
+.icon img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    border-left: 2px var(--color-MAIN) solid;
+    padding: 2rem;
+}
+.info .content p{
+    font-size: 1.1em;
+    font-weight: lighter;
+    margin-top: 1rem;
+    line-height: 32px;
+    font-family: gotham-light;
+}
+.nex_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+.nex_section svg{
+    width: auto;
+    height: 90%;
+    padding: 1rem;
+    animation: sugest 1s infinite;
+}
+.nex_section svg path{
+    stroke: var(--color-MAIN);
+    stroke-width: 1px;
+}
+
+@keyframes sugest {
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+#secondary_section{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 80vh;
+    background: black;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 48%, rgba(52, 60, 173, 0)),url(../assets/images/Foto\ 4\ WTW.jpeg);
+    background-repeat: no-repeat;
+    background-position:150%;
+    padding: 0 5rem;
+}
+#secondary_section .info{
+    width: 40vw;
+    height: auto;
+}
+#secondary_section .content{
+    border-left: none;
+    border-right: 2px var(--color-MAIN) solid
+}
+#secondary_section .content span{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--color-MAIN);
+}
+#secondary_section .content ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: 5px;
+}
+#secondary_section .content li{
+    color: var(--color-COMPLEMENTAR_1);
+}
+.info .content h1{
+    font-family: 'Roboto';
+    font-size: 64px;
+    font-weight:bold;
+    text-transform: capitalize;
+    color: var(--color-COMPLEMENTAR_1);
+}
+.photo{
+    overflow: hidden;
+    width: 10%;
+    height: auto;
+}
+.photo img{
+    width: auto;
+    height: 100%;
+}

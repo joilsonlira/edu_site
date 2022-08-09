@@ -7,9 +7,8 @@
     text-decoration: none;
     color: inherit;
 }
-
 :root{
-    --height-MAIN_HEADER: 20vh;
+    --height-MAIN_HEADER: 25vh;
     --default-horizontal-SPACING: 2.4vw;
     --minimum-horizontal-SPACING: .8vw;
     --default-vertical-SPACING: 3vh;
@@ -32,6 +31,12 @@ html{
     scroll-margin-top: var(--height-MAIN_HEADER);
 }
 
+.bg_main, #secondary_section, #height_light{
+    height: 90vh;
+}
+#secondary_section, #height_light{
+    background: rgb(236, 238, 245);
+}
 #logo{
     width: 50px;
     height: auto;
@@ -40,11 +45,16 @@ html{
     width: 100%;
     height: auto;
 }
+#main_nav{
+    width: 100%;
+}
 .menu{
     display: flex;
     align-items: center;
-    justify-content: end;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 10%;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .menu button{
     display: flex;
@@ -53,7 +63,7 @@ html{
     color: var(--color-MAIN);
     width: 150px;
     border: 15px solid;
-    border-image: url(../assets/images/Ativo\ 35PARA\ NEGOCIOS.png) 11 round;
+    border-image: url(../assets/images/Ativo\ 35PARA\ NEGOCIOS.png) 20 round;
     border-radius: 4px;
     text-transform: uppercase;
     overflow: hidden;
@@ -70,7 +80,7 @@ html{
 .menu .menu_item a {
     text-decoration: none;
     color: white;
-    font-size: .9em;
+    font-size: .7em;
     padding: 1rem;
     transform: 2ms ease-in;
     position: relative;
@@ -83,14 +93,18 @@ html{
     animation: none;
 }
 .menu .menu_item a::before{
-    content: ' ';
+    content: '';
     position: absolute;
     bottom: 0px;
-    left: 0px;
+    right: 0px;
     width: 0px;
     height: 1px;
-    background-color: var(--color-SECOND);
+    background: rgb(207,171,23);
+    background: linear-gradient(90deg, rgba(207,171,23,1) 0%, rgba(111,70,4,1) 15%, rgba(190,146,23,1) 33%, rgba(255,239,132,1) 50%, rgba(190,146,23,1) 68%, rgba(111,70,4,1) 85%, rgba(207,171,23,1) 100%);
     transition: all 500ms ease; 
+}
+.menu .menu_item:nth-child(4) a::before{
+    left: 0;
 }
 .menu .menu_item a:hover:before {
     font-size: 1em;
@@ -104,30 +118,15 @@ html{
     align-items: center;
     text-transform: uppercase;
     justify-content: space-between;
-    width: 100%;
+    width: 1366px;
     height: var(--height-MAIN_HEADER);
     display: flex;
-    background-color: transparent;
-    padding: 0 5rem;
-}
-.bg_main{
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    
-    align-items: center;
-    justify-content: space-between;
-    row-gap: 10%;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: black;
-    background: linear-gradient(357deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../assets/images/Edu\ palestrando\ no\ WTW.png);
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
 }
 
+.container{
+    margin: 0 auto;
+    width: 1366px;
+}
 .info{
     display: flex;
     align-items: center;
@@ -137,8 +136,22 @@ html{
     height: auto;
     padding: 2rem;
     border: 1px var(--color-COMPLEMENTAR_1);
-    /* background-color: rgba(226, 162, 43, 0.418); */
 }
+.bg_main{
+    width: 100%;
+    row-gap: 10%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    background-position:center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    background: linear-gradient(335deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 50%),url(../assets/images/Edu\ palestrando\ no\ WTW.png);
+    background-size:cover;
+}
+
+
 
 .icon{
     width: 100%;
@@ -147,10 +160,6 @@ html{
 .icon img{
     width: 100%;
     height: auto;
-}
-.content{
-    border-left: 2px var(--color-MAIN) solid;
-    padding: 2rem;
 }
 .info .content p{
     font-size: 1.1em;
@@ -169,9 +178,9 @@ html{
 
 .nex_section svg{
     width: auto;
-    height: 90%;
+    height: 80%;
     padding: 1rem;
-    animation: sugest 1s infinite;
+    animation: sugest 2s infinite;
 }
 .nex_section svg path{
     stroke: var(--color-MAIN);
@@ -180,35 +189,47 @@ html{
 
 @keyframes sugest {
     0%{
+        opacity: 1;
         transform: translatey(0px);
     }
     50%{
         transform: translateY(10px);
     }
+    
     100%{
+        opacity: 0;
         transform: translatey(0px);
     }
 }
-
+#secondary_section,#height_light{
+    background: rgb(236, 238, 245);
+    background-image: url('../assets/images/icon_BW.svg');
+    background-blend-mode: overlay;
+    background-position:left;
+    background-repeat:no-repeat;
+    background-size: 60%;
+    overflow: hidden;
+}
 #secondary_section{
     display: flex;
     align-items: center;
     justify-content: left;
     width: 100%;
-    height: 80vh;
-    background: black;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 48%, rgba(52, 60, 173, 0)),url(../assets/images/Foto\ 4\ WTW.jpeg);
-    background-repeat: no-repeat;
-    background-position:150%;
     padding: 0 5rem;
+    color: black;
+    
 }
 #secondary_section .info{
+    display: flex;
     width: 40vw;
     height: auto;
 }
-#secondary_section .content{
-    border-left: none;
-    border-right: 2px var(--color-MAIN) solid
+#secondary_section .info .content ul::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgb(207,171,23);
+    background: linear-gradient(90deg, rgba(207,171,23,1) 0%, rgba(111,70,4,1) 15%, rgba(190,146,23,1) 33%, rgba(255,239,132,1) 50%, rgba(190,146,23,1) 68%, rgba(111,70,4,1) 85%, rgba(207,171,23,1) 100%);
 }
 #secondary_section .content span{
     font-size: 2em;
@@ -220,9 +241,35 @@ html{
     flex-direction: column;
     justify-content: left;
     row-gap: 5px;
+    text-transform: uppercase;
 }
 #secondary_section .content li{
     color: var(--color-COMPLEMENTAR_1);
+}
+#height_light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: right;
+}
+#height_light .content{
+    display: flex;
+    align-items: centers;
+    justify-content: center;
+    column-gap: 20px;
+    width: auto;
+}
+.content .heightlight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding: .5rem;
+    width: 300px;
+    height: auto;
+    background-color:#b78c30;
+    
 }
 .info .content h1{
     font-family: 'Roboto';
@@ -232,11 +279,19 @@ html{
     color: var(--color-COMPLEMENTAR_1);
 }
 .photo{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: hard-light;
     overflow: hidden;
-    width: 10%;
-    height: auto;
+    filter: grayscale(1);
+    transition: all 1s linear;
+}
+.photo:hover{
+    filter: grayscale(0);
 }
 .photo img{
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }

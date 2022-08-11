@@ -118,7 +118,7 @@ html{
         rgba(207,171,23,1) 100%);
     transition: all 500ms ease; 
 }
-.menu .menu_item:nth-child(4) a::before{
+.menu .menu_item:nth-child(3) a::before{
     left: 0;
 }
 .menu .menu_item a:hover:before {

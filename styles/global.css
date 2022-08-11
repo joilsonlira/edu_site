@@ -57,17 +57,24 @@ html{
     flex-wrap: wrap;
 }
 .menu button{
+    border: none;
     display: flex;
+    padding: .1rem;
+    cursor: pointer;
     align-items: center;
+    border-radius: 4px;
     justify-content: center;
-    color: var(--color-MAIN);
-    width: 150px;
+    background-color: transparent;
+}
+.menu button i{
+    text-transform: uppercase;
     border: 15px solid;
+<<<<<<< HEAD
+=======
+    color: white;
+>>>>>>> 8a2447375c6e8a1d89e9907e58f870b8882168c8
     border-image: url(../assets/images/Ativo\ 35PARA\ NEGOCIOS.png) 20 round;
     border-radius: 4px;
-    text-transform: uppercase;
-    overflow: hidden;
-    background-color: transparent;
 }
 
 .menu button svg{
@@ -113,7 +120,6 @@ html{
 
 #main_header
 {
-    /* position: fixed; */
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -161,11 +167,22 @@ html{
     width: 100%;
     height: auto;
 }
+<<<<<<< HEAD
+=======
+.bg_main .info .content{
+    display: flex;
+    align-items: center;
+    border-left: 2px var(--color-MAIN) solid;
+    padding-left: 2rem;
+    width: auto;
+    height: 40vh;
+}
+>>>>>>> 8a2447375c6e8a1d89e9907e58f870b8882168c8
 .info .content p{
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: lighter;
     margin-top: 1rem;
-    line-height: 32px;
+    line-height: 28px;
     font-family: gotham-light;
 }
 .nex_section{
@@ -178,9 +195,15 @@ html{
 
 .nex_section svg{
     width: auto;
+<<<<<<< HEAD
     height: 80%;
     padding: 1rem;
     animation: sugest 2s infinite;
+=======
+    height: 100%;
+    padding: .5rem;
+    animation: sugest 1s infinite;
+>>>>>>> 8a2447375c6e8a1d89e9907e58f870b8882168c8
 }
 .nex_section svg path{
     stroke: var(--color-MAIN);
@@ -215,6 +238,7 @@ html{
     align-items: center;
     justify-content: left;
     width: 100%;
+<<<<<<< HEAD
     padding: 0 5rem;
     color: black;
     
@@ -294,4 +318,13 @@ html{
 .photo img{
     width: 100%;
     height: auto;
+=======
+    height: auto;
+    /* background: black;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 52%, rgba(52, 60, 173, 0)),url(../assets/images/Foto\ 4\ WTW.jpeg);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: contain; */
+    padding: 1rem 1rem  1rem 5rem;
+>>>>>>> 8a2447375c6e8a1d89e9907e58f870b8882168c8
 }

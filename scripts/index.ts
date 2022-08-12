@@ -14,11 +14,9 @@ setInterval(function(){
         i = 0
     }
     
-    console.log(array[i])
     document.querySelector('.photo')?.firstElementChild?.setAttribute('src', array[i])
     photo?.classList.toggle('teste')
     i = i + 1
-    console.log(i)
 
 },15000)
 

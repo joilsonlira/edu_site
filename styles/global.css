@@ -8,7 +8,7 @@
     color: inherit;
 }
 :root{
-    --height-MAIN_HEADER: 10vh;
+    --height-MAIN_HEADER: 20vh;
     --default-horizontal-SPACING: 2.4vw;
     --minimum-horizontal-SPACING: .8vw;
     --default-vertical-SPACING: 3vh;
@@ -26,10 +26,12 @@ body{
 }
 html{
     scroll-behavior: smooth;
+    scroll-snap-type:mandatory;
 }
 :target{
-    scroll-margin-top: var(--height-MAIN_HEADER);
+    scroll-margin-top: 20vh;
 }
+
 .ativo_scroll{
     position: fixed;
     background: rgba(0, 0, 2, 0.84);
@@ -41,7 +43,7 @@ html{
 }
 
 .bg_main, #secondary_section, #height_light{
-    height: 90vh;
+    height: 80vh;
 }
 #secondary_section, #height_light{
     background: rgb(236, 238, 245);
@@ -74,13 +76,14 @@ html{
     align-items: center;
     border-radius: 4px;
     justify-content: center;
+    transition: all 150ms linear;
     background-color: transparent;
 }
 .menu button i{
     text-transform: uppercase;
     border: 15px solid;
-    color: white;
     border-image: url(../assets/images/Ativo\ 35PARA\ NEGOCIOS.png) 20 round;
+    color: white;
     border-radius: 4px;
 }
 
@@ -156,7 +159,6 @@ html{
 }
 .bg_main{
     width: 100%;
-    height: 80vh;
     row-gap: 10%;
     display: flex;
     overflow: hidden;
@@ -290,7 +292,6 @@ html{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'sobre photo';
     width: 100%;
-    height: 80vh;
     padding: 0 5rem;
     color: black;
 }
@@ -367,14 +368,30 @@ html{
     align-items: center;
     background-position: right;
 }
-#height_light .content{
+#height_light .box_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: .5rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 2, 0.84);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.7px);
+    -webkit-backdrop-filter: blur(12.7px);
+}
+.box_heightlight{
     display: flex;
     align-items: centers;
     justify-content: center;
+    flex-wrap: wrap;
     column-gap: 20px;
-    width: auto;
+    width: 100%;
+    border: 15px solid;
+    border-image: url(../assets/images/Ativo\ 35PARA\ NEGOCIOS.png) 20 round;
+
 }
-.content .heightlight{
+.box_heightlight .heightlight{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -383,8 +400,6 @@ html{
     padding: .5rem;
     width: 300px;
     height: auto;
-    background-color:#b78c30;
-    
 }
 .info .content h1{
     font-family: 'Roboto';

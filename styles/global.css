@@ -175,8 +175,6 @@ html{
     background-size:cover;
 }
 
-
-
 .icon{
     grid-area: logo;
     display: flex;
@@ -372,7 +370,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 90%;
     padding: .5rem;
     border-radius: 4px;
     background: rgba(0, 0, 2, 0.84);
@@ -383,7 +381,7 @@ html{
 .box_heightlight{
     display: flex;
     align-items: centers;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 20px;
     width: 100%;
@@ -398,7 +396,7 @@ html{
     justify-content: center;
     flex-wrap:wrap;
     padding: .5rem;
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 .info .content h1{

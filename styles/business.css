@@ -1,0 +1,135 @@
+.bg_main{
+    width: 100%;
+    row-gap: 10%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    background:black;
+    background: linear-gradient(
+        335deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8) 50%);
+        height: 80vh;
+}
+#bg_container{
+    z-index: -1;
+    width: 100%;
+    height: auto;
+
+}
+#bg_container img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+}
+.info{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 12% auto;
+    width: 50%;
+    height: 55%;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+.info h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-MAIN);
+}
+.info h2{
+    font-size: 1em;
+    color:goldenrod;
+    margin-bottom: .5rem;
+}
+.info h2::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    clip-path: circle();
+    background: rgb(207,171,23);
+    background: linear-gradient(
+        90deg,
+        rgba(207,171,23,1) 0%,
+        rgba(111,70,4,1) 15%,
+        rgba(190,146,23,1) 33%,
+        rgba(255,239,132,1) 50%,
+        rgba(190,146,23,1) 68%,
+        rgba(111,70,4,1) 85%,
+        rgba(207,171,23,1) 100%);
+}
+.info p{
+    margin: 13PX 0;
+    font-size: .9em;
+}
+.info p::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+.btn_google_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .2rem;
+    margin: .5rem auto;
+    border-radius: 4px;
+    width: 60%;
+    background: rgba(0, 0, 2, .84);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
+    backdrop-filter: blur(12.7px);
+    -webkit-backdrop-filter: blur(12.7px);
+}
+.btn_google_form a{
+    width: 100%;
+    font-size: 1em;
+    border: 10px solid;
+    border-image: url(../assets/images/Ativo\ 35PARA\ NEGOCIOS.png) 20 round;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background: rgb(236, 238, 245);
+}
+.content video{
+    width: auto;
+    height: 70%;
+}
+.slide{
+    background: rgb(236, 238, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+
+}
+#box_slide{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    width: 920px;
+    overflow:hidden;
+    background-color: aqua;
+}
+.slide_item{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.slide_item img{
+    width: 400px;
+    height: auto;
+}

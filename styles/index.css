@@ -1,0 +1,288 @@
+
+.container{
+    margin: 0 auto;
+    width: 1366px;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo info";
+    margin: 0 auto;
+    width: 60vw;
+    height: 80%;
+    margin-top: 10%;
+}
+.bg_main{
+    width: 100%;
+    row-gap: 10%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    background-position:center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background: linear-gradient(
+        335deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) 50%),
+        url(../assets/images/Edu\ palestrando\ no\ WTW.png);
+    background-size:cover;
+}
+
+.icon{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.icon img{
+    width: 100%;
+    height: auto;
+}
+.content::before{
+    content: '';
+    width: 5px;
+    height: 100%;
+    margin-right:24px;
+    background: linear-gradient(
+        0deg,
+        rgba(207,171,23,1) 0%,
+        rgba(111,70,4,1) 15%,
+        rgba(190,146,23,1) 33%,
+        rgba(255,239,132,1) 50%,
+        rgba(190,146,23,1) 68%,
+        rgba(111,70,4,1) 85%,
+        rgba(207,171,23,1) 100%);
+}
+.bg_main .info .content{
+    display: flex;
+    grid-area: info;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+.info .content p{
+    font-size: 1em;
+    font-weight: lighter;
+    margin-top: 1rem;
+    line-height: 28px;
+    font-family: gotham-light;
+}
+.nex_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+.nex_section svg{
+    width: auto;
+    height: 80%;
+    padding: 1rem;
+    height: 100%;
+    padding: .5rem;
+    animation: sugest 1s infinite;
+}
+.nex_section svg path{
+    stroke: var(--color-MAIN);
+    stroke-width: 1px;
+}
+
+@keyframes sugest {
+    0%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    
+    100%{
+        opacity: 0;
+        transform: translatey(0px);
+    }
+}
+#secondary_section,#height_light{
+    background: rgb(236, 238, 245);
+    background-image: url('../assets/images/icon_BW.svg');
+    background-blend-mode: overlay;
+    background-repeat:no-repeat;
+    background-position:left;
+    background-size: 60%;
+    overflow: hidden;
+}
+#secondary_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'sobre photo';
+    width: 100%;
+    padding: 0 5rem;
+    color: black;
+}
+#secondary_section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 24px;
+    width: auto;
+    height: 100%;
+    padding: 2rem 2rem 2rem 0;
+    line-height: 24px;
+    font-size: 1em;
+    grid-area: sobre;
+    z-index: 1;
+}
+#secondary_section .content_info{
+    width: 100%;
+}
+.bg{
+    position: absolute;
+    z-index: 1;
+    width: 91.8%;
+    height: 80vh;
+    /* background: rgb(236,238,245); */
+    background: linear-gradient(90deg, rgb(236, 238, 245) 85%, rgba(255,255,255,0) 100%);
+    background-blend-mode: overlay;
+    background-position:left;
+    background-repeat:no-repeat;
+    background-size: 60%;
+}
+#secondary_section .container ul::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    margin: .5rem 0;
+    background: linear-gradient(
+        90deg,
+        rgba(207,171,23,1) 0%,
+        rgba(111,70,4,1) 15%,
+        rgba(190,146,23,1) 33%,
+        rgba(255,239,132,1) 50%,
+        rgba(190,146,23,1) 68%,
+        rgba(111,70,4,1) 85%,
+        rgba(207,171,23,1) 100%);
+}
+#secondary_section .content_info span{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--color-MAIN);
+}
+#secondary_section .content_info h1{
+    font-size: 2em;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    color: var(--color-COMPLEMENTAR_1);
+}
+#secondary_section .content_info ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: 5px;
+    text-transform: uppercase;
+}
+#secondary_section .content_info li{
+    line-height: normal;
+    color: var(--color-COMPLEMENTAR_1);
+}
+
+#height_light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: right;
+}
+#height_light .box_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: .5rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 2, .84);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
+    backdrop-filter: blur(12.7px);
+    -webkit-backdrop-filter: blur(12.7px);
+}
+.box_heightlight{
+    display: flex;
+    align-items: centers;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    width: 100%;
+    border: 15px solid;
+    border-image: url(../assets/images/Ativo\ 35PARA\ NEGOCIOS.png) 20 round;
+
+}
+.box_heightlight .heightlight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    padding: .5rem;
+    width: 250px;
+    height: auto;
+}
+.heightlight h3{
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.heightlight h3:nth-child(1){
+    font-size: 1.5em;
+    font-weight: lighter;
+    /* background-color: #b78c30; */
+}
+.heightlight h3:nth-child(2){
+    font-size: 3em;
+    font-weight: bolder;
+    color: var(--color-MAIN);
+    /* background-color: #b78c30; */
+}
+.heightlight h3:nth-child(3){
+    font-size: 1.5em;
+    color: var(--color-COMPLEMENTAR_1);
+    /* background-color: #b78c30; */
+}
+.heightlight h3:nth-child(4){
+    font-size: .9em;
+    font-weight: lighter;
+    /* background-color: #b78c30; */
+}
+.heightlight:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 4px 50px rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12.7px);
+}
+.info .content h1{
+    font-family: 'Roboto';
+    font-size: 64px;
+    font-weight:bold;
+    text-transform: capitalize;
+    color: var(--color-COMPLEMENTAR_1);
+}
+.photo{
+    grid-area: photo;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+    transition: all 1s linear;
+    mix-blend-mode: hard-light;
+    z-index: 0;
+}
+.photo:hover{
+    filter: grayscale(0);
+}
+.photo img{
+    width: 100%;
+    height: auto;
+}

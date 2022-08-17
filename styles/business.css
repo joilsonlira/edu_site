@@ -120,9 +120,8 @@
     display: flex;
     justify-content: center;
     column-gap: 20px;
-    width: 920px;
+    width: 940px;
     overflow:hidden;
-    background-color: aqua;
 }
 .slide_item{
     width: 300px;

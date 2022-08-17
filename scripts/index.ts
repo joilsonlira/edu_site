@@ -19,6 +19,7 @@ const array_bg = [
 let i:number = 0
 console.log(array_bg.length)
 console.log(bg_bussines?.firstElementChild?.getAttribute("src"))
+
 setInterval(function(){
     if(i > (array.length) || i < 0){
         i = 0

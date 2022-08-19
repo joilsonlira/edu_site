@@ -1,6 +1,7 @@
 const photo = document.querySelector('.photo_img');
 const bg_bussines = <HTMLElement>document.getElementById('bg_container');
 const menu_bar = <HTMLElement>document.getElementById('main_header');
+const logo = <HTMLElement>document.getElementById('logo');
 
 
 const array = ["./assets/images/assets_gallery/EG corpo todo tratada.jpeg",
@@ -21,6 +22,7 @@ console.log(array_bg.length)
 console.log(bg_bussines?.firstElementChild?.getAttribute("src"))
 
 setInterval(function(){
+
     if(i > (array.length) || i < 0){
         i = 0
     }else{
@@ -51,7 +53,7 @@ function active_scroll(){
     menu_bar.classList.toggle('ativo_scroll', scrollY > 0);
     console.log(document.querySelector('.logo_img')?.getAttribute("src"));
     if (scrollY > 0){
-        // logo.firstElementChild?.setAttribute('src', scr_logo)
+        console.log(logo.ElementChild?.getAttribute('src'))
     }
 }
 window.addEventListener('scroll', active_scroll);

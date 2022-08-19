@@ -3,6 +3,7 @@ var _a;
 var photo = document.querySelector('.photo_img');
 var bg_bussines = document.getElementById('bg_container');
 var menu_bar = document.getElementById('main_header');
+var logo = document.getElementById('logo');
 var array = ["./assets/images/assets_gallery/EG corpo todo tratada.jpeg",
     "./assets/images/assets_gallery/EG corpo todo.jpeg",
     "./assets/images/assets_gallery/WhatsApp Image 2021-08-05 at 19.23.48.jpeg",
@@ -44,12 +45,12 @@ setInterval(function () {
     console.log(i);
 }, 15000);
 function active_scroll() {
-    var _a;
+    var _a, _b;
     var scr_logo = '#';
     menu_bar.classList.toggle('ativo_scroll', scrollY > 0);
     console.log((_a = document.querySelector('.logo_img')) === null || _a === void 0 ? void 0 : _a.getAttribute("src"));
     if (scrollY > 0) {
-        // logo.firstElementChild?.setAttribute('src', scr_logo)
+        console.log((_b = logo.ElementChild) === null || _b === void 0 ? void 0 : _b.getAttribute('src'));
     }
 }
 window.addEventListener('scroll', active_scroll);

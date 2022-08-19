@@ -231,14 +231,13 @@ html{
     align-items: center;
     flex-direction: column;
     width: auto;
-    transition: 500ms all linear;
-
+    
 }
 .social_box::after{
     height: 0;
     content: '';
     border-radius: 4px;
-    transition: 500ms all linear;
+    transition: 500ms all ease-in-out;
 }
 .social_box:hover::after{
     content: '';

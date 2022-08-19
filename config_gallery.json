@@ -1,16 +1,22 @@
 {
     "galery_bg":[
-        "./assets/images/assets_gallery_bg/Edu palestrando no WTW.png",
         "./assets/images/assets_gallery_bg/Foto2.png",
         "./assets/images/assets_gallery_bg/Foto 3 WTW.jpeg",
+        "./assets/images/assets_gallery_bg/Edu palestrando no WTW.png",
         "./assets/images/assets_gallery_bg/WhatsApp Image 2022-07-22 at 20.25 1.png"
     ],
     "gallery_photo":[
-        "./assets/images/assets_gallery/EG corpo todo tratada.jpeg",
         "./assets/images/assets_gallery/EG corpo todo.jpeg",
+        "./assets/images/assets_gallery/EG corpo todo tratada.jpeg",
         "./assets/images/assets_gallery/WhatsApp Image 2021-08-05 at 19.23.48.jpeg",
         "./assets/images/assets_gallery/WhatsApp Image 2021-08-05 at 19.23.50.jpeg",
         "./assets/images/assets_gallery/WhatsApp Image 2021-08-05 at 19.23.51.jpeg",
         "./assets/images/assets_gallery/WhatsApp Image 2021-08-05 at 19.23.53.jpeg"
+    ],
+    "gallery_logo":[
+        "./assets/images/gallery_logo/Ativo 1LOGOS.png",
+        "./assets/images/gallery_logo/Ativo 2LOGOS.png",
+        "./assets/images/gallery_logo/Ativo 3LOGOS.png",
+        "./assets/images/gallery_logo/Ativo 4LOGOS.png"
     ]
 }

@@ -123,12 +123,46 @@
     width: 940px;
     overflow:hidden;
 }
-.slide_item{
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-}
-.slide_item img{
-    width: 400px;
+.depoimentos{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 20px 20px;
+    width: 100%;
     height: auto;
+    flex-wrap: wrap;
+    background-color:  rgb(236, 238, 245);
+}
+.box_depoimento{
+    background: rgba(0, 0, 2, 0.84);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.7px);
+    -webkit-backdrop-filter: blur(12.7px);
+    padding: 1rem;
+    width: 45%;
+    border-radius: 4px;
+}
+.name{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: var(--color-MAIN);
+}
+.job{
+    color: var(--color-SECOND);
+}
+.depoimento_info{
+    margin-top: 20px;
+}
+.depoimento_info p{
+    font-style: italic;
+    line-height: 26px;
+}
+.depoimento_info p::after, .depoimento_info p::before{
+    content: '"';
+    color: var(--color-MAIN);
+    width: 10px;
+    height: 10px;
+    font-size: 1.5em;
 }

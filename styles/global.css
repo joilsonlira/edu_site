@@ -220,7 +220,7 @@ html{
 .social{
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 50px;
 }
 .social svg{
     width: auto;
@@ -230,25 +230,22 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100px;
+    width: auto;
     transition: 500ms all linear;
 
 }
 .social_box::after{
-    transition: 500ms all linear;
-    content: '';
     height: 0;
+    content: '';
     border-radius: 4px;
-}
-.social_box:hover{
-    width: 200px;
-    height: 100px;
+    transition: 500ms all linear;
 }
 .social_box:hover::after{
     content: '';
-    width: 100%;
+    width: auto;
     height: 100%;
     display: flex;
+    padding: .5rem;
     margin-top: .5rem;
     align-items: center;
     font-weight: bolder;
@@ -264,7 +261,7 @@ html{
     content:'Facebook';
     background: #3864c2;
 }
-.youtube:hover:after{
-    content: 'Youtube';
+.youtube:hover::after{
+    content: 'Eduardo Geraldini';
     background: #c4302b;
 }

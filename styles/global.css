@@ -68,6 +68,7 @@ html{
 
     }
 }
+
 .bg_main{
     height: 100vh;
 }
@@ -77,6 +78,8 @@ html{
     justify-content: center;
     width: 100%;
     height: 10%;
+    bottom: 0;
+    position: absolute;
 }
 
 .nex_section svg{
@@ -122,16 +125,15 @@ html{
     height: auto;
 }
 #main_nav{
-
-    width: 100%;
+    width: 90%;
 }
 .menu{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    column-gap: 2rem;
+    column-gap: 11.5%;
     flex-wrap: wrap;
 }
 .menu button{
@@ -140,6 +142,7 @@ html{
     padding: .1rem;
     cursor: pointer;
     align-items: center;
+    width: 150px;
     border-radius: 4px;
     justify-content: center;
     transition: all 150ms linear;
@@ -152,7 +155,12 @@ html{
     color: white;
     border-radius: 4px;
 }
-
+.menu_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
 .menu .menu_item a {
     text-decoration: none;
     color: white;

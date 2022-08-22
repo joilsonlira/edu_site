@@ -125,10 +125,11 @@
 }
 .depoimentos{
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     color: white;
-    gap: 20px 20px;
+    row-gap: 20px;
+    column-gap: 20px;
     padding: 1rem 0;
     flex-wrap: wrap;
     align-items: center;
